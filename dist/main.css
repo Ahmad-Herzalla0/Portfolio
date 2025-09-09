@@ -1,11 +1,3 @@
-/* Compiled CSS from SCSS - Optimized for Performance */
-
-/* Critical CSS - Above the fold styles */
-.header, .intro-banner { contain: layout style; }
-
-/* ======================
-   CSS Reset & Base Styles
-   ====================== */
 *,
 *::before,
 *::after {
@@ -155,9 +147,6 @@ table {
   left: 1rem;
 }
 
-/* ======================
-   Typography Styles
-   ====================== */
 h1 {
   font-size: clamp(1.875rem, 5vw, 3rem);
   margin-bottom: 1.5rem;
@@ -318,9 +307,6 @@ hr {
   color: #1f2937;
 }
 
-/* ======================
-   Header Component
-   ====================== */
 .header {
   position: fixed;
   top: 0;
@@ -504,11 +490,6 @@ hr {
   }
 }
 
-/* Simplified header - no complex scroll animations for better performance */
-
-/* ======================
-   Intro Banner Component
-   ====================== */
 .intro-banner {
   position: relative;
   min-height: 100vh;
@@ -679,7 +660,6 @@ hr {
   }
 }
 
-/* Removed complex float animation for better performance */
 
 @keyframes fade-in-up {
   from {
@@ -704,9 +684,6 @@ hr {
   }
 }
 
-/* ======================
-   Projects Section Component
-   ====================== */
 .projects {
   padding: 6rem 0;
   background-color: #f9fafb;
@@ -787,7 +764,6 @@ hr {
   animation: fade-in 1s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
 }
 
-/* Project Card Component */
 .project-card {
   background-color: #ffffff;
   border-radius: 0.5rem;
@@ -993,9 +969,6 @@ hr {
   }
 }
 
-/* ======================
-   Button Component
-   ====================== */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -1220,9 +1193,6 @@ hr {
   }
 }
 
-/* ======================
-   Contact Section Component
-   ====================== */
 .contact {
   padding: 6rem 0;
   background-color: #ffffff;
@@ -1413,9 +1383,6 @@ hr {
   }
 }
 
-/* ======================
-   Footer Component
-   ====================== */
 .footer {
   background-color: #1f2937;
   color: #ffffff;
@@ -1491,9 +1458,6 @@ hr {
   }
 }
 
-/* ======================
-   Main Layout Component
-   ====================== */
 .main {
   min-height: 100vh;
   display: flex;

@@ -1,30 +1,22 @@
-// ======================
-// CSS Reset & Base Styles
-// ======================
-
 @use '../utils/utils' as *;
 
-// Box sizing
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
-// Remove default margins and paddings
 * {
     margin: 0;
     padding: 0;
 }
 
-// Prevent font size inflation
 html {
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
 }
 
-// Core body defaults
 body {
     min-height: 100vh;
     line-height: $line-height-normal;
@@ -37,20 +29,17 @@ body {
     @include smooth-scroll;
 }
 
-// Typography resets
 h1, h2, h3, h4, h5, h6 {
     font-weight: $font-weight-bold;
     line-height: $line-height-tight;
     color: $color-dark;
 }
 
-// Remove list styles
 ul,
 ol {
     list-style: none;
 }
 
-// Link defaults
 a {
     color: inherit;
     text-decoration: none;
@@ -67,7 +56,6 @@ a {
     }
 }
 
-// Form elements
 button,
 input,
 textarea,
@@ -76,7 +64,6 @@ select {
     color: inherit;
 }
 
-// Button reset
 button {
     background: none;
     border: none;
@@ -88,7 +75,6 @@ button {
     }
 }
 
-// Image defaults
 img,
 picture,
 video,
@@ -99,19 +85,16 @@ svg {
     height: auto;
 }
 
-// Table defaults
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-// Focus styles for interactive elements
 :focus-visible {
     outline: 2px solid $color-primary;
     outline-offset: 2px;
 }
 
-// Remove animations for users who prefer reduced motion
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -123,13 +106,11 @@ table {
     }
 }
 
-// Utility classes
 .visually-hidden,
 .sr-only {
     @include visually-hidden;
 }
 
-// Skip to main content link
 .skip-link {
     position: absolute;
     top: -40px;

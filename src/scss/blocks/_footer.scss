@@ -1,7 +1,3 @@
-// ======================
-// Footer Component
-// ======================
-
 @use '../utils/utils' as *;
 
 .footer {
@@ -11,7 +7,6 @@
     margin-top: auto;
     position: relative;
     
-    // Decorative gradient top border
     &::before {
         content: '';
         position: absolute;
@@ -43,7 +38,6 @@
             font-size: $font-size-base;
         }
         
-        // Hover effect on the text
         @include transition(color);
         
         &:hover {
@@ -52,7 +46,6 @@
     }
 }
 
-// Gradient animation
 @keyframes gradient-flow {
     0% {
         background-position: 0% 50%;
@@ -62,7 +55,6 @@
     }
 }
 
-// Reduced motion
 @media (prefers-reduced-motion: reduce) {
     .footer {
         &::before {

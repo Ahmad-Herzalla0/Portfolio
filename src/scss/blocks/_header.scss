@@ -1,7 +1,3 @@
-// ======================
-// Header Component
-// ======================
-
 @use '../utils/utils' as *;
 
 .header {
@@ -15,11 +11,6 @@
     z-index: $z-index-fixed;
     height: $header-height;
     @include transition;
-    
-    // Shrink on scroll using CSS scroll-driven animations
-    animation: shrink-header linear;
-    animation-timeline: scroll(root);
-    animation-range: 0px 200px;
     
     &__container {
         @include container;
@@ -63,71 +54,8 @@
     }
     
     &__menu {
-        display: none;
-        
-        @include media-md {
-            display: flex;
-            gap: $spacing-xs;
-        }
-        
-        &-toggle {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 4px;
-            width: 32px;
-            height: 32px;
-            position: relative;
-            z-index: $z-index-modal;
-            
-            @include media-md {
-                display: none;
-            }
-            
-            &[aria-expanded="true"] {
-                .header__menu-icon {
-                    &:nth-child(1) {
-                        transform: rotate(45deg) translate(5px, 5px);
-                    }
-                    
-                    &:nth-child(2) {
-                        opacity: 0;
-                    }
-                    
-                    &:nth-child(3) {
-                        transform: rotate(-45deg) translate(7px, -6px);
-                    }
-                }
-            }
-        }
-        
-        &-icon {
-            width: 24px;
-            height: 2px;
-            background-color: $color-dark;
-            border-radius: $radius-full;
-            @include transition;
-        }
-        
-        // Mobile menu
-        @media (max-width: #{$breakpoint-md - 1px}) {
-            position: fixed;
-            top: 0;
-            right: -100%;
-            width: min(300px, 80vw);
-            height: 100vh;
-            background-color: $color-white;
-            box-shadow: $shadow-xl;
-            padding: calc($header-height + $spacing-xl) $spacing-lg $spacing-lg;
-            flex-direction: column;
-            align-items: stretch;
-            gap: $spacing-md;
-            @include transition;
-            
-            .header__menu-toggle[aria-expanded="true"] ~ & {
-                right: 0;
-            }
-        }
+        display: flex;
+        gap: $spacing-xs;
         
         &-item {
             display: block;
@@ -150,32 +78,6 @@
                 background-color: $color-gray-lighter;
                 outline-offset: -2px;
             }
-            
-            @include media-md {
-                padding: $spacing-xs $spacing-md;
-            }
-        }
-    }
-}
-
-// Scroll-driven animation keyframes
-@keyframes shrink-header {
-    from {
-        height: $header-height;
-    }
-    to {
-        height: $header-height-scrolled;
-    }
-}
-
-// Fallback for browsers that don't support scroll-driven animations
-@supports not (animation-timeline: scroll()) {
-    .header {
-        // Use position sticky as fallback
-        transition: height $transition-base $transition-timing;
-        
-        &.scrolled {
-            height: $header-height-scrolled;
         }
     }
 }
