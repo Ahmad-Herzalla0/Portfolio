@@ -1,0 +1,148 @@
+// ======================
+// CSS Reset & Base Styles
+// ======================
+
+@use '../utils/utils' as *;
+
+// Box sizing
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// Remove default margins and paddings
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// Prevent font size inflation
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+// Core body defaults
+body {
+    min-height: 100vh;
+    line-height: $line-height-normal;
+    font-family: $font-family-primary;
+    font-size: $font-size-base;
+    color: $color-dark;
+    background-color: $color-off-white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @include smooth-scroll;
+}
+
+// Typography resets
+h1, h2, h3, h4, h5, h6 {
+    font-weight: $font-weight-bold;
+    line-height: $line-height-tight;
+    color: $color-dark;
+}
+
+// Remove list styles
+ul,
+ol {
+    list-style: none;
+}
+
+// Link defaults
+a {
+    color: inherit;
+    text-decoration: none;
+    @include transition(color);
+    
+    &:hover {
+        color: $color-primary;
+    }
+    
+    &:focus-visible {
+        outline: 2px solid $color-primary;
+        outline-offset: 2px;
+        border-radius: $radius-sm;
+    }
+}
+
+// Form elements
+button,
+input,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+}
+
+// Button reset
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+}
+
+// Image defaults
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+// Table defaults
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+// Focus styles for interactive elements
+:focus-visible {
+    outline: 2px solid $color-primary;
+    outline-offset: 2px;
+}
+
+// Remove animations for users who prefer reduced motion
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+// Utility classes
+.visually-hidden,
+.sr-only {
+    @include visually-hidden;
+}
+
+// Skip to main content link
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: $color-primary;
+    color: $color-white;
+    padding: $spacing-sm $spacing-md;
+    z-index: $z-index-tooltip;
+    text-decoration: none;
+    border-radius: $radius-md;
+    
+    &:focus {
+        top: $spacing-md;
+        left: $spacing-md;
+    }
+}

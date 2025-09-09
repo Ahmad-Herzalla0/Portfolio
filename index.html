@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional web development portfolio showcasing latest projects and skills">
+    <title>Computer Systems Engineer Portfolio - Ahmad Herzalla</title>
+    <link rel="stylesheet" href="dist/main.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header" role="banner">
+        <nav class="header__nav" role="navigation" aria-label="Main navigation">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="#" class="header__logo-link" aria-label="Home">
+                        <span class="header__logo-text">AH</span>
+                    </a>
+                </div>
+                <button class="header__menu-toggle" 
+                        aria-label="Toggle navigation menu" 
+                        aria-expanded="false"
+                        aria-controls="navigation-menu">
+                    <span class="header__menu-icon"></span>
+                    <span class="header__menu-icon"></span>
+                    <span class="header__menu-icon"></span>
+                </button>
+                <ul class="header__menu" id="navigation-menu">
+                    <li class="header__menu-item">
+                        <a href="#projects" class="header__menu-link">Projects</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="https://github.com/Ahmad-Herzalla0" target="_blank" rel="noopener noreferrer" class="header__menu-link">GitHub</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#contact" class="header__menu-link">Contact</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="tel:+970568789593" class="header__menu-link">Call Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main" role="main">
+        <!-- Intro Banner Section -->
+        <section class="intro-banner" aria-labelledby="intro-heading">
+            <div class="intro-banner__container">
+                <div class="intro-banner__content">
+                    <div class="intro-banner__profile">
+                        <img src="src/img/profile-placeholder.svg" 
+                             alt="Ahmad Herzalla - Computer Systems Engineer" 
+                             class="intro-banner__profile-image">
+                    </div>
+                    <div class="intro-banner__bio">
+                        <h1 id="intro-heading" class="intro-banner__title">
+                            Ahmad Herzalla's Engineering Portfolio
+                        </h1>
+                        <p class="intro-banner__description">
+                            Computer Systems Engineer with a Bachelor's degree from Palestine Technical University - Kadoorie (PTUK). 
+                            Passionate about developing innovative software solutions and web applications. 
+                            Based in Kafr Ra'i, Jenin, Palestine. Experienced in full-stack development with a focus on 
+                            creating efficient, user-friendly applications that solve real-world problems.
+                        </p>
+                        <div class="intro-banner__actions">
+                            <a href="#projects" class="btn btn--primary">
+                                View My Work
+                            </a>
+                            <a href="https://github.com/Ahmad-Herzalla0" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">
+                                GitHub Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Projects Section -->
+        <section class="projects" id="projects" aria-labelledby="projects-heading">
+            <div class="projects__container">
+                <h2 id="projects-heading" class="projects__title">Latest Projects</h2>
+                <div class="projects__grid">
+                    <!-- Project Card 1 -->
+                    <article class="project-card">
+                        <a href="https://github.com/Ahmad-Herzalla0/BizGrow-Landing-Website" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                            <div class="project-card__image-wrapper">
+                                <img src="src/img/project-1.svg" 
+                                     alt="BizGrow Landing Website Screenshot" 
+                                     class="project-card__image">
+                            </div>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title">BizGrow Landing Website</h3>
+                                <p class="project-card__description">
+                                    A responsive business landing website with home and contact pages. Built with HTML/CSS, 
+                                    featuring flexbox/grid layouts, hero section, services showcase, and organized stylesheet structure.
+                                </p>
+                                <span class="project-card__tech">HTML • CSS • Responsive Design</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Project Card 2 -->
+                    <article class="project-card">
+                        <a href="https://github.com/Ahmad-Herzalla0/Basic-Logic-circut" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                            <div class="project-card__image-wrapper">
+                                <img src="src/img/project-2.svg" 
+                                     alt="Basic Logic Circuit Screenshot" 
+                                     class="project-card__image">
+                            </div>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title">Basic Logic Circuit Simulator</h3>
+                                <p class="project-card__description">
+                                    Interactive digital logic circuit designer with AND, OR, NOT, XOR gates. Features real-time simulation, 
+                                    truth table generation, and educational interface for learning boolean logic.
+                                </p>
+                                <span class="project-card__tech">JavaScript • HTML5 Canvas • CSS</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Project Card 3 -->
+                    <article class="project-card">
+                        <a href="https://github.com/Ahmad-Herzalla0/Municipalities-Complaints-Management" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                            <div class="project-card__image-wrapper">
+                                <img src="src/img/project-3.svg" 
+                                     alt="Municipalities Complaints Management Screenshot" 
+                                     class="project-card__image">
+                            </div>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title">Municipal Complaints System</h3>
+                                <p class="project-card__description">
+                                    Online platform for Palestine municipalities enabling citizens to submit and track complaints. 
+                                    Focuses on transparency, modern public service delivery, and secure digital interface.
+                                </p>
+                                <span class="project-card__tech">PHP • MySQL • JavaScript • RBAC Security</span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div class="projects__action">
+                    <a href="https://github.com/Ahmad-Herzalla0?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                        View All Projects on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="contact" id="contact" aria-labelledby="contact-heading">
+            <div class="contact__container">
+                <h2 id="contact-heading" class="contact__title">Get In Touch</h2>
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__item">
+                            <div class="contact__item-icon">📍</div>
+                            <h3 class="contact__item-title">Location</h3>
+                            <p class="contact__item-text">Kafr Ra'i, Jenin<br>Palestine</p>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__item-icon">📱</div>
+                            <h3 class="contact__item-title">Phone</h3>
+                            <a href="tel:+970568789593" class="contact__item-link">+970 568 789 593</a>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__item-icon">💻</div>
+                            <h3 class="contact__item-title">GitHub</h3>
+                            <a href="https://github.com/Ahmad-Herzalla0" target="_blank" rel="noopener noreferrer" class="contact__item-link">@Ahmad-Herzalla0</a>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__item-icon">🎓</div>
+                            <h3 class="contact__item-title">Education</h3>
+                            <p class="contact__item-text">B.Sc. Computer Systems Engineering<br>Palestine Technical University - Kadoorie</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer__container">
+            <p class="footer__copyright">
+                &copy; Ahmad Herzalla 2025
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

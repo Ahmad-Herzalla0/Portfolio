@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-homepage",
+  "version": "1.0.0",
+  "description": "Professional portfolio homepage with responsive design and accessibility",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass src/scss/main.scss dist/main.css",
+    "sass:watch": "sass --watch src/scss/main.scss dist/main.css",
+    "build": "sass src/scss/main.scss dist/main.css --style=compressed",
+    "dev": "sass --watch src/scss/main.scss dist/main.css"
+  },
+  "keywords": [
+    "portfolio",
+    "web-development",
+    "responsive",
+    "accessible",
+    "scss",
+    "bem"
+  ],
+  "author": "Ahmad Herzalla",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}

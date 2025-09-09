@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#fef3c7"/>
+  <circle cx="150" cy="150" r="80" fill="#fbbf24" opacity="0.8"/>
+  <path d="M 150 150 L 200 120 L 210 130 L 180 160 L 190 170 L 160 180 Z" fill="#f59e0b"/>
+  <rect x="300" y="100" width="450" height="100" rx="8" fill="#fed7aa"/>
+  <text x="525" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" fill="#92400e">24°C</text>
+  <text x="525" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#78350f">Partly Cloudy</text>
+  <rect x="50" y="250" width="160" height="200" rx="8" fill="#fde68a"/>
+  <rect x="230" y="250" width="160" height="200" rx="8" fill="#fde68a"/>
+  <rect x="410" y="250" width="160" height="200" rx="8" fill="#fde68a"/>
+  <rect x="590" y="250" width="160" height="200" rx="8" fill="#fde68a"/>
+  <text x="130" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#78350f">Mon</text>
+  <text x="310" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#78350f">Tue</text>
+  <text x="490" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#78350f">Wed</text>
+  <text x="670" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#78350f">Thu</text>
+  <text x="400" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#92400e">Municipal Complaints System</text>
+</svg>
