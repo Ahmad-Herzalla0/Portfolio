@@ -1,10 +1,5 @@
-// ======================
-// Mixins
-// ======================
-
 @use 'variables' as *;
 
-// Media Query Mixins
 @mixin media-sm {
     @media (min-width: $breakpoint-sm) {
         @content;
@@ -35,7 +30,6 @@
     }
 }
 
-// Container Mixin
 @mixin container {
     width: 100%;
     max-width: $container-max-width;
@@ -50,7 +44,6 @@
     }
 }
 
-// Flexbox Mixins
 @mixin flex-center {
     display: flex;
     justify-content: center;
@@ -68,14 +61,12 @@
     flex-direction: column;
 }
 
-// Grid Mixin
 @mixin grid($columns: 1, $gap: $spacing-lg) {
     display: grid;
     grid-template-columns: repeat($columns, 1fr);
     gap: $gap;
 }
 
-// Button Base
 @mixin button-base {
     display: inline-flex;
     align-items: center;
@@ -96,7 +87,6 @@
     }
 }
 
-// Card Mixin
 @mixin card {
     background-color: $color-white;
     border-radius: $radius-lg;
@@ -111,7 +101,6 @@
     }
 }
 
-// Visually Hidden (for screen readers)
 @mixin visually-hidden {
     position: absolute;
     width: 1px;
@@ -124,7 +113,6 @@
     border: 0;
 }
 
-// Focus Visible
 @mixin focus-visible {
     &:focus-visible {
         outline: 2px solid $color-primary;
@@ -132,7 +120,6 @@
     }
 }
 
-// Aspect Ratio
 @mixin aspect-ratio($width: 16, $height: 9) {
     position: relative;
     
@@ -151,7 +138,6 @@
     }
 }
 
-// Truncate Text
 @mixin truncate($lines: 1) {
     @if $lines == 1 {
         white-space: nowrap;
@@ -165,7 +151,6 @@
     }
 }
 
-// Smooth Scroll
 @mixin smooth-scroll {
     scroll-behavior: smooth;
     
@@ -174,7 +159,6 @@
     }
 }
 
-// Transition
 @mixin transition($properties: all, $duration: $transition-base, $timing: $transition-timing) {
     transition: $properties $duration $timing;
     
@@ -183,7 +167,6 @@
     }
 }
 
-// Hover Effect
 @mixin hover-lift {
     @include transition(transform, $transition-base);
     
@@ -192,12 +175,10 @@
     }
 }
 
-// Gradient Background
 @mixin gradient-bg($start-color: $color-primary, $end-color: $color-primary-dark) {
     background: linear-gradient(135deg, $start-color 0%, $end-color 100%);
 }
 
-// Overlay
 @mixin overlay($opacity: 0.5) {
     position: relative;
     
